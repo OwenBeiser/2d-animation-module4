@@ -1,0 +1,314 @@
+[gd_scene format=3 uid="uid://ukiqappva7l6"]
+
+[ext_resource type="Script" uid="uid://cdx6k7i6205kp" path="res://node_2d.gd" id="1_d21ai"]
+[ext_resource type="Texture2D" uid="uid://b3jrsh1j5rsf7" path="res://person/module4-head.png" id="2_rj586"]
+[ext_resource type="Texture2D" uid="uid://dxmvy14gh43jg" path="res://person/module4-body.png" id="3_4d7sh"]
+[ext_resource type="Texture2D" uid="uid://cs521ledv4er7" path="res://person/module4-leg_l.png" id="4_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://camlwqewegnvu" path="res://person/module4-leg_r.png" id="5_hqns4"]
+[ext_resource type="Texture2D" uid="uid://wekcfjtno037" path="res://person/module4-arm_r.png" id="6_x0ka3"]
+[ext_resource type="Texture2D" uid="uid://d0kmwwsgnwd6j" path="res://person/module4-arm_l.png" id="7_0h7mo"]
+
+[sub_resource type="Animation" id="Animation_nr8wp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/arm_l:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-3.7943459]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/arm_r:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0576695]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/leg_l:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.5550884]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/leg_r:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.6179202]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/head:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5550884]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/root:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5550884]
+}
+
+[sub_resource type="Animation" id="Animation_d2bti"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/arm_l:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.14145327, 0.43427464, 0.7590149),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-3.7943459, -3.440044, -4.4453535, -3.8955748]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/arm_r:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.035982057, 0.21233019, 0.44131374, 0.7022162, 0.9228731, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.96865773, 1.5149457, 0.6736971, 0.3228859, 0.86735827, 1.0576695]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("Skeleton2D/leg_l:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.20816685, 0.584255, 0.83683074),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.5550884, 1.3788102, 1.727876, 1.3578662]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("Skeleton2D/leg_r:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.24286133, 0.6480928, 0.93536305),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.6179202, 1.4416419, 1.712168, 1.3700835]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("Skeleton2D/head:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.22204465, 0.6036839, 0.98393536),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-1.5550884, -1.3631022, -2.0769417, -1.5760323]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/root:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.22898354, 0.70499176),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-1.5550884, -1.6441002, -1.4137167]
+}
+
+[sub_resource type="Animation" id="Animation_ta5nu"]
+resource_name = "walk"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/arm_l:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.14145327, 0.43427464, 0.7590149),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-3.7943459, -3.440044, -4.4453535, -3.8955748]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/arm_r:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.035982057, 0.21233019, 0.44131374, 0.7022162, 0.9228731, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.96865773, 1.5149457, 0.6736971, 0.3228859, 0.86735827, 1.0576695]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/head:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.22204465, 0.6036839, 0.98393536),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-1.5550884, -1.3631022, -2.0769417, -1.5760323]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/root:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.22898354, 0.70499176),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-1.5550884, -1.6441002, -1.4137167]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/leg_l:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.41811007, 0.80391264),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.539999, 2.1589723, 1.0611602]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/leg_r:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.3376189, 0.6651347),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.6049864, 0.80983275, 2.2514746]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_flf07"]
+_data = {
+&"RESET": SubResource("Animation_nr8wp"),
+&"idle": SubResource("Animation_d2bti"),
+&"walk": SubResource("Animation_ta5nu")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1620741600]
+position = Vector2(151, 243)
+script = ExtResource("1_d21ai")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="." unique_id=649430560]
+
+[node name="root" type="Bone2D" parent="Skeleton2D" unique_id=2002421603]
+position = Vector2(-5.9999995, -22.999996)
+rotation = -1.5550884
+scale = Vector2(0.9999996, 0.9999996)
+
+[node name="body" type="Sprite2D" parent="Skeleton2D/root" unique_id=1049762035]
+position = Vector2(-22.093033, 8.76918)
+rotation = 1.4481293
+scale = Vector2(1.0000004, 1.0000004)
+texture = ExtResource("3_4d7sh")
+
+[node name="head" type="Bone2D" parent="Skeleton2D" unique_id=1094751879]
+position = Vector2(-6, -145)
+rotation = -1.5550884
+scale = Vector2(0.9999992, 0.9999992)
+
+[node name="head" type="Sprite2D" parent="Skeleton2D/head" unique_id=2106516447]
+position = Vector2(-148.99716, -19.515602)
+rotation = 1.7609627
+scale = Vector2(1.0000002, 1.0000002)
+texture = ExtResource("2_rj586")
+
+[node name="arm_r" type="Bone2D" parent="Skeleton2D" unique_id=209544682]
+position = Vector2(39, -63)
+rotation = 1.0576695
+
+[node name="arm_r" type="Sprite2D" parent="Skeleton2D/arm_r" unique_id=932904680]
+position = Vector2(-8.269196, 77.7986)
+rotation = -0.50692827
+texture = ExtResource("6_x0ka3")
+
+[node name="arm_l" type="Bone2D" parent="Skeleton2D" unique_id=1874846569]
+position = Vector2(-59, -65)
+rotation = -3.7943459
+scale = Vector2(0.99999976, 0.99999976)
+
+[node name="arm_l" type="Sprite2D" parent="Skeleton2D/arm_l" unique_id=515223697]
+position = Vector2(-7.189186, -93.83667)
+rotation = -2.3950825
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("7_0h7mo")
+
+[node name="leg_l" type="Bone2D" parent="Skeleton2D" unique_id=148510363]
+position = Vector2(-28, 29)
+rotation = 1.5550884
+scale = Vector2(0.9999992, 0.9999992)
+
+[node name="leg_l" type="Sprite2D" parent="Skeleton2D/leg_l" unique_id=756764921]
+position = Vector2(-32.353165, -31.277374)
+rotation = -1.4458042
+scale = Vector2(1.0000002, 1.0000002)
+texture = ExtResource("4_ir8iy")
+
+[node name="leg_r" type="Bone2D" parent="Skeleton2D" unique_id=572796254]
+position = Vector2(7, 30)
+rotation = 1.6179202
+
+[node name="leg_r" type="Sprite2D" parent="Skeleton2D/leg_r" unique_id=1142215730]
+position = Vector2(-36.068832, 5.571289)
+rotation = -1.558899
+texture = ExtResource("5_hqns4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1442501879]
+libraries/ = SubResource("AnimationLibrary_flf07")
